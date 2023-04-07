@@ -7,6 +7,7 @@ macro_rules! skip_assert_initialized {
 }
 
 pub use ffi;
+pub use glib;
 
 mod auto;
 pub use crate::auto::*;
