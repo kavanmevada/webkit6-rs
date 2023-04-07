@@ -1,0 +1,50 @@
+[crate_name_overrides]
+"java_script_core" = "javascriptcore"
+
+[options]
+girs_directories = ["../gir-files", "../webkit-gir-files"]
+library = "WebKitWebProcessExtension"
+version = "6.0"
+min_cfg_version = "2.40.0"
+work_mode = "normal"
+target_path = "."
+generate_safety_asserts = true
+single_version_file = true
+
+generate = [
+    "WebKitWebProcessExtension.ContextMenu",
+    "WebKitWebProcessExtension.ContextMenuItem",
+    "WebKitWebProcessExtension.ContextMenuAction",
+    "WebKitWebProcessExtension.Frame",
+    "WebKitWebProcessExtension.ScriptWorld",
+    "WebKitWebProcessExtension.HitTestResult",
+    "WebKitWebProcessExtension.HitTestResultContext",
+    "WebKitWebProcessExtension.WebPage",
+    "WebKitWebProcessExtension.URIRequest",
+    "WebKitWebProcessExtension.URIResponse",
+    "WebKitWebProcessExtension.UserMessage",
+    "WebKitWebProcessExtension.UserMessageError",
+    "WebKitWebProcessExtension.WebEditor",
+    "WebKitWebProcessExtension.WebFormManager",
+    "WebKitWebProcessExtension.WebHitTestResult",
+    "WebKitWebProcessExtension.WebProcessExtension",
+    "WebKitWebProcessExtension.WebProcessExtensionInitializeFunction",
+    "WebKitWebProcessExtension.WebProcessExtensionInitializeWithUserDataFunction",
+
+]
+
+manual = [
+    "GLib.Error",
+    "JavaScriptCore.Value",
+    "Gio.UnixFDList",
+    "GLib.Variant",
+    "Soup.MessageHeaders",
+    "Gio.Cancellable",
+    "Gio.Action",
+    "JavaScriptCore.Context",
+    "GLib.Quark",
+    "Gdk.Event",
+]
+
+ignore = [
+]

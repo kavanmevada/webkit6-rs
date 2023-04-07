@@ -1,0 +1,30 @@
+[crate_name_overrides]
+"java_script_core" = "javascriptcore"
+
+[options]
+girs_directories = ["../../gir-files", "../../webkit-gir-files"]
+work_mode = "sys"
+min_cfg_version = "2.40.0"
+library = "WebKit"
+version = "6.0"
+single_version_file = "."
+target_path = "."
+
+external_libraries = [
+    "GLib",
+    "GObject",
+    "Gio",
+    "Cairo",
+]
+
+ignore = [
+    "WebKit.MICRO_VERSION",
+    "WebKit.MAJOR_VERSION",
+    "WebKit.MINOR_VERSION"
+]
+
+[external_libraries]
+javascriptcore6_rs = "JavaScriptCore"
+soup3_rs = "Soup"
+gdk4 = "Gdk"
+gtk4 = "Gtk"

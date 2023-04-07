@@ -1,0 +1,11 @@
+[workspace]
+members = [
+  "javascriptcore6",
+  "javascriptcore6/sys",
+  "webkit6",
+  "webkit6/sys",
+  "webkit-web-process-extension6",
+  "webkit-web-process-extension6/sys",
+]
+
+exclude = ["gir"]

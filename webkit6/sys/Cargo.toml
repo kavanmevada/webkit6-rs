@@ -1,0 +1,75 @@
+[package]
+name = "webkit6-sys"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[package.metadata.system-deps.webkitgtk_6_0]
+name = "webkitgtk-6.0"
+version = "0"
+
+[package.metadata.system-deps.webkitgtk_6_0.v2_42]
+version = "2.42"
+
+[package.metadata.docs.rs]
+features = ["dox"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.gio]
+package = "gio-sys"
+git = "https://github.com/gtk-rs/gtk-rs-core"
+version = "0.17"
+branch = "0.17"
+
+[dependencies.glib]
+package = "glib-sys"
+git = "https://github.com/gtk-rs/gtk-rs-core"
+version = "0.17"
+branch = "0.17"
+
+[dependencies.gobject]
+package = "gobject-sys"
+git = "https://github.com/gtk-rs/gtk-rs-core"
+version = "0.17"
+branch = "0.17"
+
+[dependencies.cairo]
+package = "cairo-sys-rs"
+git = "https://github.com/gtk-rs/gtk-rs-core"
+version = "0.17"
+branch = "0.17"
+
+[dependencies.gdk]
+package = "gdk4-sys"
+git = "https://github.com/gtk-rs/gtk4-rs"
+branch = "0.6"
+version = "0.6"
+
+[dependencies.gtk]
+package = "gtk4-sys"
+git = "https://github.com/gtk-rs/gtk4-rs"
+branch = "0.6"
+version = "0.6"
+
+[dependencies.soup]
+package = "soup3-sys"
+git = "https://gitlab.gnome.org/World/Rust/soup3-rs"
+version = "0.4"
+
+[dependencies.javascriptcore]
+package = "javascriptcore6-sys"
+path = "../../javascriptcore6/sys"
+version = "0.1"
+
+[build-dependencies]
+system-deps = "6"
+
+[dev-dependencies]
+shell-words = "1.0.0"
+tempfile = "3"
+
+[features]
+dox = ["glib/dox", "gobject/dox", "gio/dox", "cairo/dox", "javascriptcore/dox", "soup/dox", "gdk/dox", "gtk/dox"]
+v2_42 = []
