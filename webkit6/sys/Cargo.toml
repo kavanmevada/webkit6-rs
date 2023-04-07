@@ -35,12 +35,6 @@ git = "https://github.com/gtk-rs/gtk-rs-core"
 version = "0.17"
 branch = "0.17"
 
-[dependencies.cairo]
-package = "cairo-sys-rs"
-git = "https://github.com/gtk-rs/gtk-rs-core"
-version = "0.17"
-branch = "0.17"
-
 [dependencies.gdk]
 package = "gdk4-sys"
 git = "https://github.com/gtk-rs/gtk4-rs"
@@ -71,5 +65,5 @@ shell-words = "1.0.0"
 tempfile = "3"
 
 [features]
-dox = ["glib/dox", "gobject/dox", "gio/dox", "cairo/dox", "javascriptcore/dox", "soup/dox", "gdk/dox", "gtk/dox"]
+dox = ["glib/dox", "gobject/dox", "gio/dox", "javascriptcore/dox", "soup/dox", "gdk/dox", "gtk/dox"]
 v2_42 = []

@@ -14,7 +14,6 @@ external_libraries = [
     "GLib",
     "GObject",
     "Gio",
-    "Cairo",
 ]
 
 ignore = [

@@ -40,11 +40,6 @@ git = "https://github.com/gtk-rs/gtk-rs-core.git"
 version = "0.17"
 branch = "0.17"
 
-[dependencies.cairo-rs]
-git = "https://github.com/gtk-rs/gtk-rs-core.git"
-version = "0.17"
-branch = "0.17"
-
 [dependencies.gio]
 git = "https://github.com/gtk-rs/gtk-rs-core.git"
 version = "0.17"

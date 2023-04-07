@@ -14,7 +14,7 @@ exclude = [
 ]
 
 [features]
-dox = ["ffi/dox", "gio/dox", "glib/dox", "cairo-rs/dox", "gdk/dox", "gtk/dox"]
+dox = ["ffi/dox", "gio/dox", "glib/dox", "gdk/dox", "gtk/dox"]
 
 [dependencies]
 bitflags = "^1.0"
@@ -37,11 +37,6 @@ version = "0.6"
 branch = "0.6"
 
 [dependencies.glib]
-git = "https://github.com/gtk-rs/gtk-rs-core.git"
-version = "0.17"
-branch = "0.17"
-
-[dependencies.cairo-rs]
 git = "https://github.com/gtk-rs/gtk-rs-core.git"
 version = "0.17"
 branch = "0.17"
