@@ -3,6 +3,14 @@ name = "webkit-web-process-extension6-sys"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
+categories = ["api-bindings", "gui"]
+description = "FFI bindings for WebKitWebProcessExtension 6"
+repository = "https://gitlab.gnome.org/World/Rust/webkit6-rs"
+license = "MIT"
+documentation = "https://world.pages.gitlab.gnome.org/Rust/webkit6-rs/stable/latest/docs/webkit_web_process_extension6_sys"
+keywords = ["webkit", "gtk-rs", "gnome", "GUI"]
+exclude = ["gir-files/*", "webkit-gir-files"]
 
 [package.metadata.docs.rs]
 features = ["dox"]
