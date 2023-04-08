@@ -2,7 +2,6 @@ use gtk::{glib, prelude::*, ApplicationWindow};
 use webkit::{prelude::*, WebView};
 
 fn main() -> glib::ExitCode {
-    gtk::init().unwrap();
     let app = gtk::Application::new(Some("org.gnome.webkit6-rs.example"), Default::default());
     app.connect_activate(move |app| {
         let window = ApplicationWindow::new(app);
