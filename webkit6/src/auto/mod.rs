@@ -261,6 +261,19 @@ pub use self::flags::InputHints;
 pub use self::flags::SnapshotOptions;
 pub use self::flags::WebsiteDataTypes;
 
+pub mod functions;
+
+mod constants;
+pub use self::constants::EDITING_COMMAND_COPY;
+pub use self::constants::EDITING_COMMAND_CREATE_LINK;
+pub use self::constants::EDITING_COMMAND_CUT;
+pub use self::constants::EDITING_COMMAND_INSERT_IMAGE;
+pub use self::constants::EDITING_COMMAND_PASTE;
+pub use self::constants::EDITING_COMMAND_PASTE_AS_PLAIN_TEXT;
+pub use self::constants::EDITING_COMMAND_REDO;
+pub use self::constants::EDITING_COMMAND_SELECT_ALL;
+pub use self::constants::EDITING_COMMAND_UNDO;
+
 #[doc(hidden)]
 pub mod traits {
     pub use super::input_method_context::InputMethodContextExt;

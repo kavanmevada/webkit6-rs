@@ -36,3 +36,10 @@ ignore = [
     "JavaScriptCore.ClassEnumeratePropertiesFunction",
     "JavaScriptCore.ClassDeletePropertyFunction"
 ]
+
+[[object]]
+name = "JavaScriptCore.*"
+status = "generate"
+    [[object.function]]
+    name = "options_foreach"
+    ignore = true  # the trait `FromGlibPtrBorrow<i32>` is not implemented for `enums::OptionType`

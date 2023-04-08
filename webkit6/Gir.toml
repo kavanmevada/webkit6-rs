@@ -13,6 +13,7 @@ work_mode = "normal"
 use_gi_docgen = true
 
 generate = [
+  "WebKit.*",
   "WebKit.ApplicationInfo",
   "WebKit.Credential",
   "WebKit.AuthenticationScheme",

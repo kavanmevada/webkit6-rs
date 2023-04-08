@@ -23,3 +23,7 @@ pub use crate::auto::*;
 pub mod prelude {
     pub use super::auto::traits::*;
 }
+
+pub mod functions {
+    pub use super::auto::functions::*;
+}

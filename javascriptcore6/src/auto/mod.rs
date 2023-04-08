@@ -29,3 +29,11 @@ pub use self::enums::TypedArrayType;
 
 mod flags;
 pub use self::flags::ValuePropertyFlags;
+
+pub mod functions;
+
+mod constants;
+pub use self::constants::OPTIONS_USE_DFG;
+pub use self::constants::OPTIONS_USE_FTL;
+pub use self::constants::OPTIONS_USE_JIT;
+pub use self::constants::OPTIONS_USE_LLINT;
