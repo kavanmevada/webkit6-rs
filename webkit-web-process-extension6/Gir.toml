@@ -10,6 +10,7 @@ work_mode = "normal"
 target_path = "."
 generate_safety_asserts = true
 single_version_file = true
+use_gi_docgen = true
 
 generate = [
     "WebKitWebProcessExtension.ContextMenu",
