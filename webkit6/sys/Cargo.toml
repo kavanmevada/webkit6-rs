@@ -3,10 +3,18 @@ name = "webkit6-sys"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
+categories = ["api-bindings", "gui"]
+description = "FFI bindings for WebKit 6.0"
+repository = "https://gitlab.gnome.org/World/Rust/webkit6-rs"
+license = "MIT"
+documentation = "https://world.pages.gitlab.gnome.org/Rust/webkit6-rs/stable/latest/docs/webkit6_sys"
+keywords = ["webkit", "gtk-rs", "gnome", "GUI"]
+exclude = ["gir-files/*", "webkit-gir-files"]
 
 [package.metadata.system-deps.webkitgtk_6_0]
 name = "webkitgtk-6.0"
-version = "0"
+version = "2.40"
 
 [package.metadata.system-deps.webkitgtk_6_0.v2_42]
 version = "2.42"

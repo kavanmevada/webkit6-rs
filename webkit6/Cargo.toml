@@ -2,15 +2,16 @@
 name = "webkit6"
 version = "0.1.0"
 edition = "2021"
-authors = ["The Gtk-rs Project Developers"]
+authors = ["Bilal Elmoussaoui <bil.elmoussaoui@gmail.com>"]
 categories = ["api-bindings", "gui"]
-description = "Rust bindings for webkit-gtk library"
+description = "Rust bindings for WebKit 6.0"
 repository = "https://gitlab.gnome.org/World/Rust/webkit6-rs"
 license = "MIT"
-documentation = "https://world.pages.gitlab.gnome.org/Rust/webkit6-rs/"
+documentation = "https://world.pages.gitlab.gnome.org/Rust/webkit6-rs/stable/latest/docs/webkit6"
 keywords = ["webkit", "gtk-rs", "gnome", "GUI"]
 exclude = [
     "gir-files/*",
+    "webkit-gir-files",
 ]
 
 [features]

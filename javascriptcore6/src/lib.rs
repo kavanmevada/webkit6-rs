@@ -13,3 +13,7 @@ pub use glib;
 
 mod auto;
 pub use crate::auto::*;
+
+pub mod functions {
+    pub use super::auto::functions::*;
+}
