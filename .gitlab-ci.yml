@@ -34,7 +34,7 @@ docs:
     - ./generator.py --embed-docs
     - rustup default nightly
     - eval $(./gir-rustdoc.py pre-docs)
-    - cargo doc --features dox --no-deps
+    - cargo doc --features dox --no-deps -p webkit6 -p webkit6-sys -p javascriptcore6 -p javascriptcore6-sys -p webkit-web-process-extension6 -p webkit-web-process-extension6-sys
     - mv target/doc/ docs
   artifacts:
     paths:
@@ -54,4 +54,3 @@ pages:
       - public
   rules:
     - if: $CI_DEFAULT_BRANCH == $CI_COMMIT_BRANCH
-
